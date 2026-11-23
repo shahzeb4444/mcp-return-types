@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-page-01-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "page-01",
+  "category": "pagination",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the total from the available issue data.",
+  "endedBy": "final",
+  "turns": 3,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 2,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "expected one number, got \"I can’t determine the total from the available issue data.\""
+  ],
+  "usage": {
+    "input_tokens": 36401,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 117632,
+    "output_tokens": 866,
+    "reasoning_output_tokens": 583
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 35144,
+  "systemPromptSha256": "5926a9cab7e58d619bf24ef2974d28a1b7de988e084d1943c9c4f33947f0ef98",
+  "startedAt": "2026-11-22T16:21:13.620Z",
+  "finishedAt": "2026-11-22T16:21:49.463Z"
+}

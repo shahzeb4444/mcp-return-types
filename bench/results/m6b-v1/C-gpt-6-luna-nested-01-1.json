@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-nested-01-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "nested-01",
+  "category": "nested",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "Unable to determine with the available tools.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "expected one number, got \"Unable to determine with the available tools.\""
+  ],
+  "usage": {
+    "input_tokens": 10045,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 96768,
+    "output_tokens": 583,
+    "reasoning_output_tokens": 419
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 21317,
+  "systemPromptSha256": "0f58349c76b0053677d6ef6df46ec92f5efa64ca981458bdd0321d44138ac62b",
+  "startedAt": "2026-11-22T16:17:58.938Z",
+  "finishedAt": "2026-11-22T16:18:20.917Z"
+}

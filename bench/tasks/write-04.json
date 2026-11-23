@@ -1,0 +1,170 @@
+{
+  "id": "write-04",
+  "category": "write",
+  "prompt": "In acme/api, add the label `stale` to every open issue that has the label `bug`, has no milestone, and was last updated (updated_at) before 2026-06-01T00:00:00Z. Do not change any other issue. When you are done, reply with the word done.",
+  "answer_type": "none",
+  "expected_state": {
+    "writes": [
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 15,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 28,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 36,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 60,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 69,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 96,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 113,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 122,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 178,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 184,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 187,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 189,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 243,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 254,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 255,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 318,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 328,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 450,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 460,
+          "label": "stale"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/api",
+          "number": 463,
+          "label": "stale"
+        }
+      }
+    ]
+  }
+}

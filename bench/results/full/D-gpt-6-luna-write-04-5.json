@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-write-04-5",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "write-04",
+  "category": "write",
+  "rep": 5,
+  "pass": false,
+  "answerOk": true,
+  "stateOk": false,
+  "final": "I couldn’t make the change: the harness does not provide the `list_issues` tool.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 20,
+  "gradeReasons": [
+    "20 missing write(s): [\"add_label\",\"acme/api\",15,\"stale\"] [\"add_label\",\"acme/api\",28,\"stale\"] [\"add_label\",\"acme/api\",36,\"stale\"] [\"add_label\",\"acme/api\",60,\"stale\"] [\"add_label\",\"acme/api\",69,\"stale\"] ...",
+    "final state lacks 20 expected effect(s)"
+  ],
+  "usage": {
+    "input_tokens": 7726,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 82048,
+    "output_tokens": 778,
+    "reasoning_output_tokens": 305
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 22677,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:43:23.564Z",
+  "finishedAt": "2026-11-23T15:43:46.802Z"
+}

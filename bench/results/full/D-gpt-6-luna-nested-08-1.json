@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-08-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-08",
+  "category": "nested",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I couldn’t retrieve the issue comments because the available runtime doesn’t provide the GitHub tools, so I can’t determine the logins.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "set differs: missing [calm-lynx92, dusty-marten68, eager-ferret17, frosty-tapir51, gentle-crane60, icy-gecko42, misty-quail62, misty-zebra60, proud-ibis78, quick-yak15, young-viper21], extra [i couldn’t retrieve the issue comments because the available runtime doesn’t provide the github tools, so i can’t determine the logins]"
+  ],
+  "usage": {
+    "input_tokens": 14755,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 127616,
+    "output_tokens": 665,
+    "reasoning_output_tokens": 427
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 28093,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T14:19:48.517Z",
+  "finishedAt": "2026-11-23T14:20:17.104Z"
+}

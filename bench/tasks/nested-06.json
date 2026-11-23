@@ -1,0 +1,7 @@
+{
+  "id": "nested-06",
+  "category": "nested",
+  "prompt": "In acme/cli, how many issues were closed during October 2026 (UTC, judged by the time they were closed)? Reply with the number.",
+  "answer_type": "number",
+  "answer": 42
+}

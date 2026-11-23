@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-write-02-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "write-02",
+  "category": "write",
+  "rep": 2,
+  "pass": false,
+  "answerOk": true,
+  "stateOk": false,
+  "final": "I can’t make the assignments because the issue-management tools aren’t available in this session.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 16,
+  "gradeReasons": [
+    "16 missing write(s): [\"assign\",\"acme/api\",5,\"gentle-seal60\"] [\"assign\",\"acme/api\",93,\"jolly-walrus28\"] [\"assign\",\"acme/api\",130,\"fuzzy-bison28\"] [\"assign\",\"acme/api\",187,\"young-quail53\"] [\"assign\",\"acme/api\",278,\"fuzzy-bison28\"] ...",
+    "final state lacks 16 expected effect(s)"
+  ],
+  "usage": {
+    "input_tokens": 8098,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 134528,
+    "output_tokens": 564,
+    "reasoning_output_tokens": 348
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 23776,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T14:48:35.418Z",
+  "finishedAt": "2026-11-23T14:48:59.776Z"
+}

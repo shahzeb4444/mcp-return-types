@@ -1,0 +1,17 @@
+{
+  "id": "nested-02",
+  "category": "nested",
+  "prompt": "In acme/web, which users commented on at least 4 different open issues that have the label `perf`? Reply with a JSON array of logins.",
+  "answer_type": "set",
+  "answer": [
+    "calm-lynx92",
+    "dusty-marten68",
+    "eager-ferret17",
+    "frosty-egret92",
+    "frosty-tapir51",
+    "lucky-egret27",
+    "misty-quail62",
+    "quick-yak15",
+    "young-viper21"
+  ]
+}

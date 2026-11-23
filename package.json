@@ -1,0 +1,64 @@
+{
+  "name": "mcp-return-types",
+  "version": "1.0.0",
+  "description": "Infer return types for MCP tools from real traffic and emit TypeScript declarations / outputSchema.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahzeb4444/mcp-return-types.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "typescript",
+    "code-mode",
+    "outputSchema",
+    "type-inference"
+  ],
+  "bin": {
+    "mcp-return-types": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "latency": "tsx bench/latency.ts",
+    "mock-server": "tsx bench/mock-server/server.ts",
+    "bench:tasks": "tsx bench/tasks/build.ts",
+    "bench:reference": "tsx bench/reference-solver.ts",
+    "bench": "tsx bench/run.ts",
+    "bench:warmup": "tsx bench/warmup.ts",
+    "bench:analyze": "tsx bench/analyze.ts",
+    "bench:preflight": "tsx bench/preflight.ts",
+    "bench:plain": "tsx bench/plain-mcp/run.ts",
+    "bench:plain:analyze": "tsx bench/plain-mcp/analyze.ts",
+    "bench:plain:prepare": "tsx bench/plain-mcp/prepare-everything.ts",
+    "ask": "tsx bench/ask.ts",
+    "validate:real": "tsx scripts/validate-real-servers.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "cross-spawn": "^7.0.6"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/server-everything": "1.0.0",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^22.0.0",
+    "rimraf": "^6.1.4",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.0",
+    "vitest": "^5.1.1"
+  }
+}

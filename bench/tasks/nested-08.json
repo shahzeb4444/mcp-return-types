@@ -1,0 +1,19 @@
+{
+  "id": "nested-08",
+  "category": "nested",
+  "prompt": "On issue #137 in acme/api, which users wrote at least 2 comments? Reply with a JSON array of logins.",
+  "answer_type": "set",
+  "answer": [
+    "calm-lynx92",
+    "dusty-marten68",
+    "eager-ferret17",
+    "frosty-tapir51",
+    "gentle-crane60",
+    "icy-gecko42",
+    "misty-quail62",
+    "misty-zebra60",
+    "proud-ibis78",
+    "quick-yak15",
+    "young-viper21"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-page-01-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "page-01",
+  "category": "pagination",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the number because the issue lookup calls aren’t available in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "expected one number, got \"I can’t determine the number because the issue lookup calls aren’t available in this run.\""
+  ],
+  "usage": {
+    "input_tokens": 16447,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 74752,
+    "output_tokens": 301,
+    "reasoning_output_tokens": 120
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 13315,
+  "systemPromptSha256": "0f58349c76b0053677d6ef6df46ec92f5efa64ca981458bdd0321d44138ac62b",
+  "startedAt": "2026-11-22T16:18:49.924Z",
+  "finishedAt": "2026-11-22T16:19:04.089Z"
+}

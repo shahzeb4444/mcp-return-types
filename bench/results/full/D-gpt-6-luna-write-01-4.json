@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-write-01-4",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "write-01",
+  "category": "write",
+  "rep": 4,
+  "pass": false,
+  "answerOk": true,
+  "stateOk": false,
+  "final": "I couldn’t make the change: the code runner doesn’t provide the issue or label tools.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 13,
+  "gradeReasons": [
+    "13 missing write(s): [\"add_label\",\"acme/cli\",20,\"needs-triage\"] [\"add_label\",\"acme/cli\",129,\"needs-triage\"] [\"add_label\",\"acme/cli\",147,\"needs-triage\"] [\"add_label\",\"acme/cli\",167,\"needs-triage\"] [\"add_label\",\"acme/cli\",261,\"needs-triage\"] ...",
+    "final state lacks 13 expected effect(s)"
+  ],
+  "usage": {
+    "input_tokens": 8052,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 99584,
+    "output_tokens": 763,
+    "reasoning_output_tokens": 333
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 25199,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:23:23.306Z",
+  "finishedAt": "2026-11-23T15:23:49.261Z"
+}

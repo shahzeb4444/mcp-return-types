@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-ctrl-01-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "ctrl-01",
+  "category": "control",
+  "rep": 2,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t retrieve issue #42 because `get_issue` isn’t available in this run, so I can’t give its exact title.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i can’t retrieve issue #42 because `get_issue` isn’t available in this run, so i can’t give its exact title\" != expected \"memory leak when resizing nested tables behind a proxy\""
+  ],
+  "usage": {
+    "input_tokens": 7920,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 116224,
+    "output_tokens": 480,
+    "reasoning_output_tokens": 265
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 24332,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T14:30:49.397Z",
+  "finishedAt": "2026-11-23T14:31:14.235Z"
+}

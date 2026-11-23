@@ -1,0 +1,7 @@
+{
+  "id": "ctrl-02",
+  "category": "control",
+  "prompt": "Which user opened issue #7 in acme/web? Reply with the login.",
+  "answer_type": "string",
+  "answer": "young-hare35"
+}

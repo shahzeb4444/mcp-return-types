@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-page-05-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "page-05",
+  "category": "pagination",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the login because the issue-listing tool isn’t available in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i can’t determine the login because the issue-listing tool isn’t available in this run\" != expected \"misty-quail62\""
+  ],
+  "usage": {
+    "input_tokens": 8380,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 118016,
+    "output_tokens": 846,
+    "reasoning_output_tokens": 243
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 27734,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T14:25:26.918Z",
+  "finishedAt": "2026-11-23T14:25:55.157Z"
+}

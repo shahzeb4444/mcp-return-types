@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-write-03-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "write-03",
+  "category": "write",
+  "rep": 1,
+  "pass": false,
+  "answerOk": true,
+  "stateOk": false,
+  "final": "I couldn’t post the comments because the harness provided no GitHub tools.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 18,
+  "gradeReasons": [
+    "18 missing write(s): [\"post_comment\",\"acme/web\",9,\"ping @proud-ibis78\"] [\"post_comment\",\"acme/web\",12,\"ping @proud-ibis78\"] [\"post_comment\",\"acme/web\",27,\"ping @daring-egret24\"] [\"post_comment\",\"acme/web\",33,\"ping @proud-ibis78\"] [\"post_comment\",\"acme/web\",58,\"ping @misty-yak49\"] ...",
+    "final state lacks 18 expected effect(s)"
+  ],
+  "usage": {
+    "input_tokens": 5320,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 86400,
+    "output_tokens": 582,
+    "reasoning_output_tokens": 380
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 21824,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T01:51:38.576Z",
+  "finishedAt": "2026-11-23T01:52:00.929Z"
+}

@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-nested-04-3",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "nested-04",
+  "category": "nested",
+  "rep": 3,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the milestone: the issue-listing tools described in the prompt aren’t available in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i can’t determine the milestone: the issue-listing tools described in the prompt aren’t available in this run\" != expected \"cobalt 7.4\""
+  ],
+  "usage": {
+    "input_tokens": 8946,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 82432,
+    "output_tokens": 484,
+    "reasoning_output_tokens": 320
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 18804,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T14:54:57.764Z",
+  "finishedAt": "2026-11-23T14:55:17.102Z"
+}

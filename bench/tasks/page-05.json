@@ -1,0 +1,7 @@
+{
+  "id": "page-05",
+  "category": "pagination",
+  "prompt": "Which user opened the most issues in acme/web, counting open and closed issues? Reply with the login. If there is a tie, give the login that comes first alphabetically.",
+  "answer_type": "string",
+  "answer": "misty-quail62"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "page-06",
+  "category": "pagination",
+  "prompt": "Which issue in acme/web, open or closed, has the most comments? Reply with the issue number. If there is a tie, give the lowest number.",
+  "answer_type": "number",
+  "answer": 113
+}

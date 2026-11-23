@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-write-04-3",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "write-04",
+  "category": "write",
+  "rep": 3,
+  "pass": false,
+  "answerOk": true,
+  "stateOk": false,
+  "final": "I couldn’t update the issues: the harness doesn’t expose the GitHub issue tools in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 20,
+  "gradeReasons": [
+    "20 missing write(s): [\"add_label\",\"acme/api\",15,\"stale\"] [\"add_label\",\"acme/api\",28,\"stale\"] [\"add_label\",\"acme/api\",36,\"stale\"] [\"add_label\",\"acme/api\",60,\"stale\"] [\"add_label\",\"acme/api\",69,\"stale\"] ...",
+    "final state lacks 20 expected effect(s)"
+  ],
+  "usage": {
+    "input_tokens": 14615,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 93312,
+    "output_tokens": 883,
+    "reasoning_output_tokens": 422
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 27631,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:08:40.049Z",
+  "finishedAt": "2026-11-23T15:09:08.294Z"
+}

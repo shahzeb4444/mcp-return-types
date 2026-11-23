@@ -1,0 +1,114 @@
+{
+  "id": "write-01",
+  "category": "write",
+  "prompt": "In acme/cli, add the label `needs-triage` to every open issue that has no labels at all. Do not change any other issue. When you are done, reply with the word done.",
+  "answer_type": "none",
+  "expected_state": {
+    "writes": [
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 20,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 129,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 147,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 167,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 261,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 285,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 308,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 316,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 366,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 367,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 373,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 446,
+          "label": "needs-triage"
+        }
+      },
+      {
+        "tool": "add_label",
+        "args": {
+          "repo": "acme/cli",
+          "number": 538,
+          "label": "needs-triage"
+        }
+      }
+    ]
+  }
+}

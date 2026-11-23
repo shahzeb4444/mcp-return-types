@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-nested-05-3",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "nested-05",
+  "category": "nested",
+  "rep": 3,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the login because the issue tools aren’t available in the execution harness.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i can’t determine the login because the issue tools aren’t available in the execution harness\" != expected \"proud-ibis78\""
+  ],
+  "usage": {
+    "input_tokens": 9325,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 97536,
+    "output_tokens": 419,
+    "reasoning_output_tokens": 220
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 17891,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T14:56:14.960Z",
+  "finishedAt": "2026-11-23T14:56:33.417Z"
+}

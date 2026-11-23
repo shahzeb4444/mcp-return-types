@@ -1,0 +1,154 @@
+{
+  "id": "write-03",
+  "category": "write",
+  "prompt": "In acme/web, post one comment on every open issue that has the label `perf` and has an assignee. The comment body must be exactly `ping @LOGIN`, where LOGIN is that issue's assignee login. Post exactly one comment per issue and do not comment anywhere else. When you are done, reply with the word done.",
+  "answer_type": "none",
+  "expected_state": {
+    "writes": [
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 9,
+          "body": "ping @proud-ibis78"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 12,
+          "body": "ping @proud-ibis78"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 27,
+          "body": "ping @daring-egret24"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 33,
+          "body": "ping @proud-ibis78"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 58,
+          "body": "ping @misty-yak49"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 171,
+          "body": "ping @gentle-crane60"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 207,
+          "body": "ping @young-badger39"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 228,
+          "body": "ping @gentle-crane60"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 247,
+          "body": "ping @dusty-jackal41"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 337,
+          "body": "ping @brisk-egret54"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 346,
+          "body": "ping @calm-gecko92"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 352,
+          "body": "ping @zesty-bison76"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 426,
+          "body": "ping @misty-quail62"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 437,
+          "body": "ping @young-badger39"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 472,
+          "body": "ping @olive-heron52"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 477,
+          "body": "ping @proud-ibis78"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 501,
+          "body": "ping @calm-lynx92"
+        }
+      },
+      {
+        "tool": "post_comment",
+        "args": {
+          "repo": "acme/web",
+          "number": 509,
+          "body": "ping @young-quail53"
+        }
+      }
+    ]
+  }
+}

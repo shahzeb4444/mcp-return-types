@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-page-02-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "page-02",
+  "category": "pagination",
+  "rep": 2,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "Unable to determine: the issue comment tools are unavailable in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "set differs: missing [brisk-otter79, dusty-marten68, frosty-seal95, frosty-tapir51, gentle-seal60, jolly-marten27, misty-zebra60, olive-falcon10, tidy-koala34], extra [unable to determine: the issue comment tools are unavailable in this run]"
+  ],
+  "usage": {
+    "input_tokens": 9473,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 97152,
+    "output_tokens": 517,
+    "reasoning_output_tokens": 333
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 19628,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T01:58:27.098Z",
+  "finishedAt": "2026-11-23T01:58:47.219Z"
+}

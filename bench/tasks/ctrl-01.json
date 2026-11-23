@@ -1,0 +1,7 @@
+{
+  "id": "ctrl-01",
+  "category": "control",
+  "prompt": "What is the title of issue #42 in acme/api? Reply with the exact title.",
+  "answer_type": "string",
+  "answer": "Memory leak when resizing nested tables behind a proxy"
+}

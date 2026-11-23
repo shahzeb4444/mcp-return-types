@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-page-01-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "page-01",
+  "category": "pagination",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "0",
+  "endedBy": "final",
+  "turns": 2,
+  "toolCalls": 1,
+  "sandboxRuns": 1,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer 0 != expected 517"
+  ],
+  "usage": {
+    "input_tokens": 9571,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 112256,
+    "output_tokens": 704,
+    "reasoning_output_tokens": 398
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 26018,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T01:47:11.306Z",
+  "finishedAt": "2026-11-23T01:47:38.103Z"
+}

@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-07-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-07",
+  "category": "nested",
+  "rep": 2,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I couldn’t retrieve the issues: the harness does not expose `list_issues` or `search_issues` as callable tools, so I can’t determine the issue numbers.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "set differs: missing [182, 228, 27, 352, 471], extra [i couldn’t retrieve the issues: the harness does not expose `list_issues` or `search_issues` as callable tools, so i can’t determine the issue numbers]"
+  ],
+  "usage": {
+    "input_tokens": 18810,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 70528,
+    "output_tokens": 852,
+    "reasoning_output_tokens": 454
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 23845,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T14:39:05.604Z",
+  "finishedAt": "2026-11-23T14:39:30.042Z"
+}

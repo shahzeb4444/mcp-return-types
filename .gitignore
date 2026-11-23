@@ -1,0 +1,12 @@
+node_modules
+dist
+.typegen
+bench/.env
+bench/results/raw
+logs
+.agent-lock
+bench/results/dry-run
+bench/STOP
+.env
+.env.*
+!.env.example

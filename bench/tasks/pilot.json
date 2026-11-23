@@ -1,0 +1,17 @@
+{
+  "description": "Fixed pilot subset (BENCHMARK.md): 5 nested/optional, 4 pagination, 2 writes, 1 control.",
+  "tasks": [
+    "nested-01",
+    "nested-03",
+    "nested-04",
+    "nested-06",
+    "nested-07",
+    "page-01",
+    "page-02",
+    "page-03",
+    "page-06",
+    "write-01",
+    "write-03",
+    "ctrl-01"
+  ]
+}

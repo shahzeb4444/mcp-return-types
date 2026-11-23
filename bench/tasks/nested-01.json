@@ -1,0 +1,7 @@
+{
+  "id": "nested-01",
+  "category": "nested",
+  "prompt": "In acme/api, how many open issues have the label `bug`, have nobody assigned, and have more than 5 comments? Reply with the number.",
+  "answer_type": "number",
+  "answer": 18
+}

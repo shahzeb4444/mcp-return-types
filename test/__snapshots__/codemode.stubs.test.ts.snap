@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`generateStubs (SPEC §6) > arm C: every return is Promise<unknown> 1`] = `
+"declare const tools: {
+  /** Who am I */
+  "get-me"(): Promise<unknown>;
+  /**
+   * List issues of a repo.
+   * Supports paging.
+   */
+  list_issues(args: {
+    /** Repo owner */
+    owner: string;
+    repo: string;
+    state?: "open" | "closed";
+    page?: number;
+  }): Promise<unknown>;
+  no_schema(args?: Record<string, unknown>): Promise<unknown>;
+  search(args?: {
+    q?: string;
+    labels?: string[];
+  }): Promise<unknown>;
+};
+"
+`;
+
+exports[`generateStubs (SPEC §6) > arm D: the same stubs with the inferred return types 1`] = `
+"type GetMeResult = {
+  login: string;
+};
+
+type ListIssuesResult = {
+  number: number;
+  title: string;
+  /** format: date-time */
+  closed_at: string | null;
+}[];
+
+type SearchResult = {
+  total: number;
+  items: {
+    id: number;
+    extra?: boolean;
+  }[];
+};
+
+declare const tools: {
+  /** Who am I */
+  // low confidence
+  "get-me"(): Promise<GetMeResult>;
+  /**
+   * List issues of a repo.
+   * Supports paging.
+   */
+  list_issues(args: {
+    /** Repo owner */
+    owner: string;
+    repo: string;
+    state?: "open" | "closed";
+    page?: number;
+  }): Promise<ListIssuesResult>;
+  no_schema(args?: Record<string, unknown>): Promise<unknown>;
+  search(args?: {
+    q?: string;
+    labels?: string[];
+  }): Promise<SearchResult>;
+};
+"
+`;

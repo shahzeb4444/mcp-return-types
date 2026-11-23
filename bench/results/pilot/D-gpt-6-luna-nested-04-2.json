@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-04-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-04",
+  "category": "nested",
+  "rep": 2,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine this from the available runtime: the issue tools are not callable here, so I can’t retrieve the open issues and count them by milestone.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i can’t determine this from the available runtime: the issue tools are not callable here, so i can’t retrieve the open issues and count them by milestone\" != expected \"cobalt 7.4\""
+  ],
+  "usage": {
+    "input_tokens": 14518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 109824,
+    "output_tokens": 443,
+    "reasoning_output_tokens": 229
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 20684,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T01:54:50.210Z",
+  "finishedAt": "2026-11-23T01:55:11.409Z"
+}

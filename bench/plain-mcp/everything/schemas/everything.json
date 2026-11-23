@@ -1,0 +1,81 @@
+{
+  "v": 1,
+  "server": "everything",
+  "generatedAt": "2026-11-23T18:29:39.484Z",
+  "tools": {
+    "echo": {
+      "tool": "echo",
+      "unwrap": "text",
+      "unwrapCounts": {
+        "text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-23T18:29:38.831Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "string"
+      },
+      "version": 1,
+      "seen": 10,
+      "drift": []
+    },
+    "get-structured-content": {
+      "tool": "get-structured-content",
+      "unwrap": "structuredContent",
+      "unwrapCounts": {
+        "structuredContent": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-23T18:29:38.847Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "temperature": {
+            "type": "integer"
+          },
+          "conditions": {
+            "type": "string"
+          },
+          "humidity": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "temperature",
+          "conditions",
+          "humidity"
+        ],
+        "additionalProperties": false
+      },
+      "version": 1,
+      "seen": 10,
+      "drift": []
+    },
+    "get-sum": {
+      "tool": "get-sum",
+      "unwrap": "text",
+      "unwrapCounts": {
+        "text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-23T18:29:38.837Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "string"
+      },
+      "version": 1,
+      "seen": 10,
+      "drift": []
+    }
+  }
+}

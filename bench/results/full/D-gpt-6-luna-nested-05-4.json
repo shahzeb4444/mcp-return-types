@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-05-4",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-05",
+  "category": "nested",
+  "rep": 4,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the login because the issue lookup tool isn’t available in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i can’t determine the login because the issue lookup tool isn’t available in this run\" != expected \"proud-ibis78\""
+  ],
+  "usage": {
+    "input_tokens": 14947,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 145280,
+    "output_tokens": 599,
+    "reasoning_output_tokens": 346
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 25117,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:15:05.065Z",
+  "finishedAt": "2026-11-23T15:15:30.717Z"
+}

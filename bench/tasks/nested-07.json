@@ -1,0 +1,13 @@
+{
+  "id": "nested-07",
+  "category": "nested",
+  "prompt": "In acme/web, which open issues have both the `bug` label and the `perf` label? Reply with a JSON array of issue numbers.",
+  "answer_type": "set",
+  "answer": [
+    27,
+    182,
+    228,
+    352,
+    471
+  ]
+}

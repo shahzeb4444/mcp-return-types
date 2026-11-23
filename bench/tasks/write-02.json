@@ -1,0 +1,138 @@
+{
+  "id": "write-02",
+  "category": "write",
+  "prompt": "In acme/api, every open issue that has the label `security` and has nobody assigned must be assigned to the user who opened it. Make these assignments and do not change any other issue. When you are done, reply with the word done.",
+  "answer_type": "none",
+  "expected_state": {
+    "writes": [
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 5,
+          "assignee": "gentle-seal60"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 93,
+          "assignee": "jolly-walrus28"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 130,
+          "assignee": "fuzzy-bison28"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 187,
+          "assignee": "young-quail53"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 278,
+          "assignee": "fuzzy-bison28"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 281,
+          "assignee": "olive-heron52"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 302,
+          "assignee": "misty-quail62"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 310,
+          "assignee": "dusty-jackal41"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 332,
+          "assignee": "eager-ferret17"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 339,
+          "assignee": "olive-falcon10"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 376,
+          "assignee": "zesty-bison76"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 382,
+          "assignee": "tidy-koala34"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 424,
+          "assignee": "young-hare35"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 435,
+          "assignee": "young-viper21"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 442,
+          "assignee": "vivid-otter75"
+        }
+      },
+      {
+        "tool": "assign",
+        "args": {
+          "repo": "acme/api",
+          "number": 483,
+          "assignee": "rusty-newt10"
+        }
+      }
+    ]
+  }
+}

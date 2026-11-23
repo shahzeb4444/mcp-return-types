@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-page-03-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "page-03",
+  "category": "pagination",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I couldn’t retrieve the issue list, so I can’t determine the exact title.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i couldn’t retrieve the issue list, so i can’t determine the exact title\" != expected \"wrong output with large unicode paths in ci\""
+  ],
+  "usage": {
+    "input_tokens": 19063,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 87680,
+    "output_tokens": 544,
+    "reasoning_output_tokens": 284
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 21156,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T01:49:20.861Z",
+  "finishedAt": "2026-11-23T01:49:42.505Z"
+}

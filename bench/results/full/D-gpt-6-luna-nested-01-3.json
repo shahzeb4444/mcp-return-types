@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-01-3",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-01",
+  "category": "nested",
+  "rep": 3,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the number: the available harness doesn’t include the GitHub issue tools needed to query acme/api.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "expected one number, got \"I can’t determine the number: the available harness doesn’t include the GitHub issue tools needed to query acme/api.\""
+  ],
+  "usage": {
+    "input_tokens": 14425,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 92288,
+    "output_tokens": 609,
+    "reasoning_output_tokens": 395
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 20631,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T14:52:09.404Z",
+  "finishedAt": "2026-11-23T14:52:30.587Z"
+}

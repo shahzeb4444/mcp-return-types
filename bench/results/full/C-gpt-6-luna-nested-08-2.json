@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-nested-08-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "nested-08",
+  "category": "nested",
+  "rep": 2,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "[\"calm-lynx92\",\"dusty-marten68\",\"eager-ferret17\",\"frosty-tapir51\",\"misty-quail62\",\"proud-ibis78\",\"quick-yak15\"]",
+  "endedBy": "final",
+  "turns": 2,
+  "toolCalls": 1,
+  "sandboxRuns": 1,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "set differs: missing [gentle-crane60, icy-gecko42, misty-zebra60, young-viper21], extra []"
+  ],
+  "usage": {
+    "input_tokens": 10907,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 54528,
+    "output_tokens": 680,
+    "reasoning_output_tokens": 473
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 25913,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T14:40:38.360Z",
+  "finishedAt": "2026-11-23T14:41:05.005Z"
+}

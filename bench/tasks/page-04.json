@@ -1,0 +1,7 @@
+{
+  "id": "page-04",
+  "category": "pagination",
+  "prompt": "How many closed issues does acme/cli have? Reply with the number.",
+  "answer_type": "number",
+  "answer": 235
+}

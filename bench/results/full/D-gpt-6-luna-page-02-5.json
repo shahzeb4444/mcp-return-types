@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-page-02-5",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "page-02",
+  "category": "pagination",
+  "rep": 5,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "[]",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "set differs: missing [brisk-otter79, dusty-marten68, frosty-seal95, frosty-tapir51, gentle-seal60, jolly-marten27, misty-zebra60, olive-falcon10, tidy-koala34], extra []"
+  ],
+  "usage": {
+    "input_tokens": 7002,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 63360,
+    "output_tokens": 247,
+    "reasoning_output_tokens": 129
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 11836,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:35:13.862Z",
+  "finishedAt": "2026-11-23T15:35:26.240Z"
+}

@@ -1,0 +1,2943 @@
+{
+  "v": 1,
+  "server": "mock-github",
+  "generatedAt": "2026-11-22T15:12:54.632Z",
+  "tools": {
+    "add_label": {
+      "tool": "add_label",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 11
+      },
+      "samples": 11,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:53.908Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "integer"
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "color"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "number",
+          "labels"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 2,
+        "unwrapCounts": {
+          "text": 2
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 13,
+      "drift": []
+    },
+    "assign": {
+      "tool": "assign",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:53.920Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "integer"
+          },
+          "assignee": {
+            "type": "object",
+            "properties": {
+              "login": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "login",
+              "id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "number",
+          "assignee"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_add_reaction": {
+      "tool": "chat_add_reaction",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.187Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "ok"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_get_channel": {
+      "tool": "chat_get_channel",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.132Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "creator": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "value",
+              "creator"
+            ],
+            "additionalProperties": false
+          },
+          "purpose": {
+            "type": "null"
+          },
+          "created": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "topic",
+          "purpose",
+          "created"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_get_message": {
+      "tool": "chat_get_message",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.157Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "ts": {
+            "type": "string"
+          },
+          "user": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ],
+            "additionalProperties": false
+          },
+          "text": {
+            "type": "string"
+          },
+          "reactions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "name",
+                "count"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "thread_ts": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ts",
+          "user",
+          "text",
+          "reactions"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_get_presence": {
+      "tool": "chat_get_presence",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.226Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "presence": {
+            "type": "string"
+          },
+          "last_activity": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "presence",
+          "last_activity"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_get_thread": {
+      "tool": "chat_get_thread",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.247Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "messages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ts": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                },
+                "text": {
+                  "type": "string"
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "count"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "thread_ts": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ts",
+                "user",
+                "text",
+                "reactions"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "messages"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_get_user": {
+      "tool": "chat_get_user",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.218Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "profile": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string",
+                "format": "email"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "profile"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_list_channels": {
+      "tool": "chat_list_channels",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-22T15:12:54.123Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "channels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "is_archived": {
+                  "type": "boolean"
+                },
+                "num_members": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "is_archived",
+                "num_members"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "response_metadata": {
+            "type": "object",
+            "properties": {
+              "next_cursor": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "next_cursor"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "channels",
+          "response_metadata"
+        ],
+        "additionalProperties": false
+      },
+      "version": 1,
+      "seen": 10,
+      "drift": []
+    },
+    "chat_list_files": {
+      "tool": "chat_list_files",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.267Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "integer"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "size",
+                "user"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "files"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_list_messages": {
+      "tool": "chat_list_messages",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.144Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "messages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ts": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                },
+                "text": {
+                  "type": "string"
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "count"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "thread_ts": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ts",
+                "user",
+                "text",
+                "reactions"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "has_more": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "messages",
+          "has_more"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_list_pins": {
+      "tool": "chat_list_pins",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.304Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "object",
+                  "properties": {
+                    "ts": {
+                      "type": "string"
+                    },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "reactions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "x-capped": "depth"
+                          },
+                          "count": {
+                            "x-capped": "depth"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "count"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "thread_ts": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ts",
+                    "user",
+                    "text",
+                    "reactions"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "type",
+                "message"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_list_threads": {
+      "tool": "chat_list_threads",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.237Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "threads": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ts": {
+                  "type": "string"
+                },
+                "reply_count": {
+                  "type": "integer"
+                },
+                "latest_reply": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "ts",
+                "reply_count",
+                "latest_reply"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "threads"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_list_users": {
+      "tool": "chat_list_users",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 6,
+      "newest": "2026-11-22T15:12:54.209Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "is_bot": {
+                  "type": "boolean"
+                },
+                "tz": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "is_bot",
+                "tz"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "members"
+        ],
+        "additionalProperties": false
+      },
+      "version": 1,
+      "seen": 10,
+      "drift": []
+    },
+    "chat_post_message": {
+      "tool": "chat_post_message",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.176Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "channel": {
+            "type": "string"
+          },
+          "ts": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ok",
+          "channel",
+          "ts"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_search_messages": {
+      "tool": "chat_search_messages",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.257Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "integer"
+          },
+          "matches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ts": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                },
+                "text": {
+                  "type": "string"
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "count"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "thread_ts": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ts",
+                "user",
+                "text",
+                "reactions"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "total",
+          "matches"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "chat_set_topic": {
+      "tool": "chat_set_topic",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.197Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "topic": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ok",
+          "topic"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_cancel_pipeline": {
+      "tool": "ci_cancel_pipeline",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.021Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_get_artifact": {
+      "tool": "ci_get_artifact",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.054Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "file_name": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer"
+          },
+          "expire_at": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "file_name",
+          "size",
+          "expire_at"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_get_job": {
+      "tool": "ci_get_job",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:53.992Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "stage": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "runner": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "description"
+            ],
+            "additionalProperties": false
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "stage",
+          "status",
+          "runner",
+          "started_at"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_get_job_log": {
+      "tool": "ci_get_job_log",
+      "unwrap": "text",
+      "unwrapCounts": {
+        "text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.000Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "string"
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_get_pipeline": {
+      "tool": "ci_get_pipeline",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:53.970Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "project": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "duration_s": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "jobs_count": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "project",
+          "ref",
+          "status",
+          "created_at",
+          "duration_s",
+          "jobs_count"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_get_runner": {
+      "tool": "ci_get_runner",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.076Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "online": {
+            "type": "boolean"
+          },
+          "version": {
+            "type": "string"
+          },
+          "contacted_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "online",
+          "version",
+          "contacted_at"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_list_artifacts": {
+      "tool": "ci_list_artifacts",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.044Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "artifacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "file_name": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "integer"
+                },
+                "expire_at": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "id",
+                "file_name",
+                "size",
+                "expire_at"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "artifacts"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_list_deployments": {
+      "tool": "ci_list_deployments",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-22T15:12:54.100Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "deployments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "id",
+                "status",
+                "created_at",
+                "user"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "deployments"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_list_environments": {
+      "tool": "ci_list_environments",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-22T15:12:54.088Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "environments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "last_deployment": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "sha": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "sha"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "name",
+                "state",
+                "last_deployment"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "environments"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_list_jobs": {
+      "tool": "ci_list_jobs",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:53.981Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "jobs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "stage": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "runner": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "description"
+                  ],
+                  "additionalProperties": false
+                },
+                "started_at": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "stage",
+                "status",
+                "runner",
+                "started_at"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "jobs"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_list_pipelines": {
+      "tool": "ci_list_pipelines",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 6,
+      "newest": "2026-11-22T15:12:53.960Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "pipelines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "project": {
+                  "type": "string"
+                },
+                "ref": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "duration_s": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "project",
+                "ref",
+                "status",
+                "created_at",
+                "duration_s"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "pipelines"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_list_runners": {
+      "tool": "ci_list_runners",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-22T15:12:54.065Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "description": {
+              "type": "string"
+            },
+            "online": {
+              "type": "boolean"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "id",
+            "description",
+            "online",
+            "tags"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "version": 1,
+      "seen": 10,
+      "drift": []
+    },
+    "ci_list_schedules": {
+      "tool": "ci_list_schedules",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-22T15:12:54.112Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "schedules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "cron": {
+                  "type": "string"
+                },
+                "active": {
+                  "type": "boolean"
+                },
+                "next_run_at": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": [
+                "id",
+                "cron",
+                "active",
+                "next_run_at"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "schedules"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_retry_job": {
+      "tool": "ci_retry_job",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:54.011Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "stage": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "runner": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "description"
+            ],
+            "additionalProperties": false
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "retried_from": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "stage",
+          "status",
+          "runner",
+          "started_at",
+          "retried_from"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "ci_trigger_pipeline": {
+      "tool": "ci_trigger_pipeline",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 3,
+      "newest": "2026-11-22T15:12:54.032Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "project": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "duration_s": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "project",
+          "ref",
+          "status",
+          "created_at",
+          "duration_s"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "get_issue": {
+      "tool": "get_issue",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 18
+      },
+      "samples": 18,
+      "distinctArgs": 12,
+      "newest": "2026-11-22T15:12:53.848Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "user": {
+            "type": "object",
+            "properties": {
+              "login": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "login",
+              "id"
+            ],
+            "additionalProperties": false
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "color"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "assignee": {
+            "type": "object",
+            "properties": {
+              "login": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "login",
+              "id"
+            ],
+            "additionalProperties": false
+          },
+          "comments": {
+            "type": "integer"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "closed_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "milestone": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "number": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "due_on": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "number",
+              "title",
+              "due_on"
+            ],
+            "additionalProperties": false
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "number",
+          "title",
+          "state",
+          "user",
+          "labels",
+          "comments",
+          "created_at",
+          "updated_at",
+          "closed_at",
+          "milestone",
+          "body"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 2,
+        "unwrapCounts": {
+          "text": 2
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 20,
+      "drift": []
+    },
+    "list_comments": {
+      "tool": "list_comments",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 20
+      },
+      "samples": 20,
+      "distinctArgs": 20,
+      "newest": "2026-11-22T15:12:53.859Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "login",
+                    "id"
+                  ],
+                  "additionalProperties": false
+                },
+                "body": {
+                  "type": "string"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "author_association": {
+                  "type": "string",
+                  "x-observed-values": [
+                    "MEMBER",
+                    "NONE",
+                    "CONTRIBUTOR",
+                    "OWNER"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "user",
+                "body",
+                "created_at",
+                "author_association"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "next_page": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "items",
+          "next_page"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 21,
+      "drift": []
+    },
+    "list_issues": {
+      "tool": "list_issues",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 82
+      },
+      "samples": 82,
+      "distinctArgs": 82,
+      "newest": "2026-11-22T15:12:53.816Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string",
+                  "x-observed-values": [
+                    "open",
+                    "closed"
+                  ]
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "login",
+                    "id"
+                  ],
+                  "additionalProperties": false
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "x-observed-values": [
+                          "bug",
+                          "enhancement",
+                          "perf",
+                          "docs",
+                          "security",
+                          "good first issue",
+                          "question",
+                          "wontfix"
+                        ]
+                      },
+                      "color": {
+                        "type": "string",
+                        "x-observed-values": [
+                          "a720e7",
+                          "854e75",
+                          "f6d217",
+                          "c29ce9",
+                          "1c4221",
+                          "9208b3",
+                          "c8f249",
+                          "6955f7"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "color"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "assignee": {
+                  "type": "object",
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "login",
+                    "id"
+                  ],
+                  "additionalProperties": false
+                },
+                "comments": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "updated_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "closed_at": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date-time"
+                },
+                "milestone": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "number": {
+                      "type": "integer"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "due_on": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "date-time",
+                      "x-observed-values": [
+                        "2027-03-03T17:09:58Z",
+                        "2026-01-06T08:27:27Z",
+                        "2027-05-10T12:15:40Z",
+                        "2026-04-26T18:48:38Z",
+                        "2026-02-24T09:09:24Z",
+                        "2027-05-05T06:10:58Z",
+                        "2027-05-22T20:55:52Z"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "title",
+                    "due_on"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "number",
+                "title",
+                "state",
+                "user",
+                "labels",
+                "comments",
+                "created_at",
+                "updated_at",
+                "closed_at",
+                "milestone"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "next_page": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "items",
+          "next_page"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 2,
+        "unwrapCounts": {
+          "text": 2
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 84,
+      "drift": []
+    },
+    "list_prs": {
+      "tool": "list_prs",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 12
+      },
+      "samples": 12,
+      "distinctArgs": 12,
+      "newest": "2026-11-22T15:12:53.948Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "draft": {
+              "type": "boolean"
+            },
+            "user": {
+              "type": "object",
+              "properties": {
+                "login": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "login",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            "head": {
+              "type": "object",
+              "properties": {
+                "ref": {
+                  "type": "string"
+                },
+                "sha": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ref",
+                "sha"
+              ],
+              "additionalProperties": false
+            },
+            "base": {
+              "type": "object",
+              "properties": {
+                "ref": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ref"
+              ],
+              "additionalProperties": false
+            },
+            "requested_reviewers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "login": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "login",
+                  "id"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "merged_at": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date-time"
+            },
+            "created_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "number",
+            "title",
+            "state",
+            "draft",
+            "user",
+            "head",
+            "base",
+            "requested_reviewers",
+            "merged_at",
+            "created_at"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "error": {
+        "samples": 2,
+        "unwrapCounts": {
+          "text": 2
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 14,
+      "drift": []
+    },
+    "post_comment": {
+      "tool": "post_comment",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 10
+      },
+      "samples": 10,
+      "distinctArgs": 10,
+      "newest": "2026-11-22T15:12:53.930Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "user": {
+            "type": "object",
+            "properties": {
+              "login": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "login",
+              "id"
+            ],
+            "additionalProperties": false
+          },
+          "body": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "author_association": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "user",
+          "body",
+          "created_at",
+          "author_association"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 1,
+        "unwrapCounts": {
+          "text": 1
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 11,
+      "drift": []
+    },
+    "search_issues": {
+      "tool": "search_issues",
+      "unwrap": "json-text",
+      "unwrapCounts": {
+        "json-text": 11
+      },
+      "samples": 11,
+      "distinctArgs": 11,
+      "newest": "2026-11-22T15:12:53.893Z",
+      "confidence": "high",
+      "confidenceReasons": [],
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "incomplete_results": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "repository": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "login",
+                    "id"
+                  ],
+                  "additionalProperties": false
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "color": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "color"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "assignee": {
+                  "type": "object",
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "login",
+                    "id"
+                  ],
+                  "additionalProperties": false
+                },
+                "comments": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "updated_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "closed_at": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date-time"
+                },
+                "milestone": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "number": {
+                      "type": "integer"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "due_on": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "title",
+                    "due_on"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "repository",
+                "number",
+                "title",
+                "state",
+                "user",
+                "labels",
+                "comments",
+                "created_at",
+                "updated_at",
+                "closed_at",
+                "milestone"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "incomplete_results",
+          "items"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "samples": 2,
+        "unwrapCounts": {
+          "text": 2
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "string"
+        },
+        "rpcErrors": {}
+      },
+      "version": 1,
+      "seen": 13,
+      "drift": []
+    }
+  }
+}

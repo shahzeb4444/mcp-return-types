@@ -1,0 +1,7 @@
+{
+  "id": "page-01",
+  "category": "pagination",
+  "prompt": "How many issues does acme/web have in total, open and closed together? Reply with the number.",
+  "answer_type": "number",
+  "answer": 517
+}

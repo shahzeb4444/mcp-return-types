@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-03-2",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-03",
+  "category": "nested",
+  "rep": 2,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t access the issue search data in this session, so I can’t determine the issue numbers reliably.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "set differs: missing [103, 278, 321, 324, 33, 347, 392, 42, 531, 532, 54], extra [i can’t access the issue search data in this session, so i can’t determine the issue numbers reliably]"
+  ],
+  "usage": {
+    "input_tokens": 18783,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 87680,
+    "output_tokens": 563,
+    "reasoning_output_tokens": 334
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 19556,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T01:53:51.083Z",
+  "finishedAt": "2026-11-23T01:54:11.150Z"
+}

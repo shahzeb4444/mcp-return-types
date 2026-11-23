@@ -1,0 +1,19 @@
+{
+  "id": "nested-03",
+  "category": "nested",
+  "prompt": "In acme/cli, which closed issues have the label `security` and no milestone? Reply with a JSON array of issue numbers.",
+  "answer_type": "set",
+  "answer": [
+    33,
+    42,
+    54,
+    103,
+    278,
+    321,
+    324,
+    347,
+    392,
+    531,
+    532
+  ]
+}

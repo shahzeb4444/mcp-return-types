@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-06-4",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-06",
+  "category": "nested",
+  "rep": 4,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I can’t determine the number because the issue-listing tools aren’t available in this run.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "expected one number, got \"I can’t determine the number because the issue-listing tools aren’t available in this run.\""
+  ],
+  "usage": {
+    "input_tokens": 15076,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 145024,
+    "output_tokens": 548,
+    "reasoning_output_tokens": 320
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 23398,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:16:10.772Z",
+  "finishedAt": "2026-11-23T15:16:34.722Z"
+}

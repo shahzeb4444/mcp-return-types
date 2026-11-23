@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-ctrl-01-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "ctrl-01",
+  "category": "control",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I couldn’t retrieve issue #42 because the GitHub issue lookup isn’t available in this session.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i couldn’t retrieve issue #42 because the github issue lookup isn’t available in this session\" != expected \"memory leak when resizing nested tables behind a proxy\""
+  ],
+  "usage": {
+    "input_tokens": 16537,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 75136,
+    "output_tokens": 540,
+    "reasoning_output_tokens": 387
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 18562,
+  "systemPromptSha256": "5926a9cab7e58d619bf24ef2974d28a1b7de988e084d1943c9c4f33947f0ef98",
+  "startedAt": "2026-11-22T16:19:17.454Z",
+  "finishedAt": "2026-11-22T16:19:36.654Z"
+}

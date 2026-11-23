@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "C-gpt-6-luna-ctrl-01-5",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "C",
+  "model": "gpt-6-luna",
+  "task": "ctrl-01",
+  "category": "control",
+  "rep": 5,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I couldn’t retrieve issue #42: the issue lookup tool wasn’t available in the runner, so I can’t give you its exact title.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "answer \"i couldn’t retrieve issue #42: the issue lookup tool wasn’t available in the runner, so i can’t give you its exact title\" != expected \"memory leak when resizing nested tables behind a proxy\""
+  ],
+  "usage": {
+    "input_tokens": 20514,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 71040,
+    "output_tokens": 597,
+    "reasoning_output_tokens": 389
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 22907,
+  "systemPromptSha256": "8ea4f0aafaf44f92be1fc7003109599ff094579877546cff90cbc9e07383931e",
+  "startedAt": "2026-11-23T15:27:06.887Z",
+  "finishedAt": "2026-11-23T15:27:30.384Z"
+}

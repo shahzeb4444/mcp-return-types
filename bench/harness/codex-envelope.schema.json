@@ -1,0 +1,1 @@
+{"type":"object","properties":{"action":{"type":"string","enum":["run_code","final"]},"code":{"type":"string"},"answer":{"type":"string"}},"required":["action","code","answer"],"additionalProperties":false}

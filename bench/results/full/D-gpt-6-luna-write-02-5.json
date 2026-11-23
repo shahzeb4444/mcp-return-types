@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-write-02-5",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "write-02",
+  "category": "write",
+  "rep": 5,
+  "pass": false,
+  "answerOk": true,
+  "stateOk": false,
+  "final": "I couldn’t make the assignments because the harness did not provide the `list_issues` tool.",
+  "endedBy": "final",
+  "turns": 1,
+  "toolCalls": 0,
+  "sandboxRuns": 0,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 16,
+  "gradeReasons": [
+    "16 missing write(s): [\"assign\",\"acme/api\",5,\"gentle-seal60\"] [\"assign\",\"acme/api\",93,\"jolly-walrus28\"] [\"assign\",\"acme/api\",130,\"fuzzy-bison28\"] [\"assign\",\"acme/api\",187,\"young-quail53\"] [\"assign\",\"acme/api\",278,\"fuzzy-bison28\"] ...",
+    "final state lacks 16 expected effect(s)"
+  ],
+  "usage": {
+    "input_tokens": 13998,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 74496,
+    "output_tokens": 375,
+    "reasoning_output_tokens": 210
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 19274,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T15:41:06.262Z",
+  "finishedAt": "2026-11-23T15:41:26.104Z"
+}

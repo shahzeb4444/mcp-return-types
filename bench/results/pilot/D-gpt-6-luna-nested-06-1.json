@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "id": "D-gpt-6-luna-nested-06-1",
+  "status": "done",
+  "backend": "codex-cli",
+  "arm": "D",
+  "model": "gpt-6-luna",
+  "task": "nested-06",
+  "category": "nested",
+  "rep": 1,
+  "pass": false,
+  "answerOk": false,
+  "stateOk": true,
+  "final": "I couldn’t get the issue count because the query code failed to run.",
+  "endedBy": "final",
+  "turns": 2,
+  "toolCalls": 1,
+  "sandboxRuns": 1,
+  "exceptions": 0,
+  "timeouts": 0,
+  "rewrites": 0,
+  "codeErrors": 0,
+  "malformed": 0,
+  "duplicateWrites": 0,
+  "unexpectedWrites": 0,
+  "missingWrites": 0,
+  "gradeReasons": [
+    "expected one number, got \"I couldn’t get the issue count because the query code failed to run.\""
+  ],
+  "usage": {
+    "input_tokens": 26891,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 31104,
+    "output_tokens": 327,
+    "reasoning_output_tokens": 95
+  },
+  "turnsMissingUsage": 0,
+  "modelLatencyMs": 14257,
+  "systemPromptSha256": "656df8823e77416431e721c0b15214edab1c3ecfabdb22bb893f89c08ceea4a6",
+  "startedAt": "2026-11-23T01:45:57.207Z",
+  "finishedAt": "2026-11-23T01:46:12.196Z"
+}

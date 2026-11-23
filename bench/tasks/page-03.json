@@ -1,0 +1,7 @@
+{
+  "id": "page-03",
+  "category": "pagination",
+  "prompt": "What is the title of the oldest open issue in acme/api that has no milestone? The oldest issue is the one with the lowest number. Reply with the exact title.",
+  "answer_type": "string",
+  "answer": "Wrong output with large unicode paths in CI"
+}
